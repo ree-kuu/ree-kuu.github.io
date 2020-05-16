@@ -29,6 +29,8 @@ $(function() {
 		var l8 = $('textarea#add-task-desc').val();
 		var l9 = '</div></div>';
 		$('#task-list').append(l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9);
+		$('textarea#add-task-head').val('');
+		$('textarea#add-task-desc').val('');
 	});
 
 	// свернуть описание задачи
