@@ -16,7 +16,6 @@ textarea {
 	width: 370px;
 	padding: 9px;
 	resize: none;
-	outline: none;
 	background-color: #fcfcfc;
 	font-size: 16px;
 	display: block
@@ -62,7 +61,7 @@ input[type=button] {
 	}
 
 		.task-header {
-			padding: 15px 20px;
+			padding: 16px 20px;
 			font-size: 16px;
 			display: inline-block;
 		}
@@ -79,14 +78,19 @@ input[type=button] {
 			width: 9px;
 			height: 9px;
 			background-image: url(delete.png);
+			background-repeat: no-repeat;
+			background-position: center center;
 			display: inline-block;
 		}
 
 		.task-collapse {
 			width: 6px;
 			height: 5px;
-			margin: 22px 20px;
+			margin: 12px 10px;
+			padding: 10px;
 			background-image: url(collapse.png);
+			background-repeat: no-repeat;
+			background-position: center center;
 			display: inline-block;
 			float: right;
 		}
