@@ -16,7 +16,7 @@ $(function() {
 		}
 	});
 
-	// добавить новую задачу
+	// добавить новую задачу, очистить поля и снова выключить кнопку
 
 	$('input[type=button]').click(function() {
 		var l1 = '<div class="todo-task">';
@@ -29,8 +29,12 @@ $(function() {
 		var l8 = $('textarea#add-task-desc').val();
 		var l9 = '</div></div>';
 		$('#task-list').append(l1 + l2 + l3 + l4 + l5 + l6 + l7 + l8 + l9);
+		
 		$('textarea#add-task-head').val('');
 		$('textarea#add-task-desc').val('');
+
+		$('input[type=button]').attr('disabled', true);
+		$('input[type=button]').css('background-color', '#8993ad');
 	});
 
 	// свернуть описание задачи
