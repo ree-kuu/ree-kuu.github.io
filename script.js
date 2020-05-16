@@ -12,6 +12,7 @@ $(function() {
 			$('input[type=button]').css('background-color', '#2174fd');
 		} else {
 			$('input[type=button]').attr('disabled', true);
+			$('input[type=button]').css('background-color', '#8993ad');
 		}
 	});
 
