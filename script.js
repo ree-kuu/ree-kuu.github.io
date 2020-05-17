@@ -37,19 +37,27 @@ $(function() {
 		$('input[type=button]').css('background-color', '#8993ad');
 	});
 
-	// свернуть описание задачи
+	// с анимацией свернуть описание задачи
 
 	$('#task-list').on('click', '.task-collapse', function() {
-		$($(this).next()).toggle();
+		$(this).next().slideToggle("fast")
 		});
 
 	// удалить задачу
 
 	$('#task-list').on('click', '.task-delete', function() {
-		$($(this).parent()).remove();
+		$(this).parent().remove();
 		});
 
 	// $('#staticParent').on('click', '.dynamicElement', function() {
 	//     // Do something on an existent or future .dynamicElement
 
 });
+
+
+		if ($($(this).next()).is(':visible')){
+			$($(this).next()).fadeOut()
+		}
+		else {
+			$($(this).next()).fadeIn()
+		}

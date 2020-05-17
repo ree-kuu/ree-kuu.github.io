@@ -68,10 +68,11 @@ input[type=button] {
 
 		.task-description {
 			padding: 10px 20px; 
-			min-height: 65px;
+			height: 65px;
 			font-size: 14px;
 			color: #8993ad;
 			border-top: 1px solid #f5f5f5;
+			display: block;
 		}
 
 		.task-delete {
