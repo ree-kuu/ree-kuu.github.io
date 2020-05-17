@@ -40,14 +40,15 @@ $(function() {
 	// с анимацией свернуть описание задачи
 
 	$('#task-list').on('click', '.task-collapse', function() {
-		$(this).next().slideToggle("fast")
-		});
+		$(this).next().slideToggle("fast");
+		$(this).toggleClass('task-collapse-rotated');    	
+	});
 
 	// удалить задачу
 
 	$('#task-list').on('click', '.task-delete', function() {
 		$(this).parent().remove();
-		});
+	});
 
 	// $('#staticParent').on('click', '.dynamicElement', function() {
 	//     // Do something on an existent or future .dynamicElement
@@ -55,9 +56,9 @@ $(function() {
 });
 
 
-		if ($($(this).next()).is(':visible')){
-			$($(this).next()).fadeOut()
-		}
-		else {
-			$($(this).next()).fadeIn()
-		}
+		// if ($($(this).next()).is(':visible')){
+		// 	$($(this).next()).fadeOut()
+		// }
+		// else {
+		// 	$($(this).next()).fadeIn()
+		// }
