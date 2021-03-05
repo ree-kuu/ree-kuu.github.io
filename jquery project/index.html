@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Список дел</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="fixed-container">
+		<div id="left-column">
+			<h2>Список дел:</h2>
+			<div id="task-list"></div>
+			<div id="empty-task-list">Список пуст...</div>
+		</div>
+		<div id="right-column">
+			<h2>Добавить новое дело</h2>
+			<div id="task-form">
+				<form>
+					<div>* Название</div>
+					<textarea id="add-task-head"></textarea>
+					<div>* Описание</div>
+					<textarea id="add-task-desc"></textarea>
+					<input type="button" value="Добавить дело">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
